@@ -1,0 +1,72 @@
+.up-navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../../public/images/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    img {
+        width: 5rem;
+    }
+}
+
+.navbar {
+    background-color: black !important;
+    height: 5rem;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .redes-navbar {
+        width: 1fr;
+
+        a {
+            margin: 0 0.5rem;
+        }
+    }
+
+    .logo-navbar {
+        width: 38rem;
+        display: flex !important;
+        justify-content: end !important;
+        img {
+            width: 13rem;
+        }
+    }
+
+    .links-navbar {
+        width: 1fr;
+        display: flex;
+        justify-content: end;
+    }
+}
+
+
+.nav-item {
+    .nav-link {
+        color: white;
+        text-decoration: none;
+        font-family: roboto;
+        font-size: 1.6rem;
+        margin: 0 0.8rem;
+    }
+
+    .contacto-navbar {
+        width: 140px;
+        height: 28px;
+        border-radius: 23.187px 4.637px;
+        background: var(--Plateado, linear-gradient(90deg, #6B6B6A 3%, #C1C1C1 34.04%, #DBDBDB 49.07%, #626262 100%));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-family: roboto-bold;
+    }
+
+}

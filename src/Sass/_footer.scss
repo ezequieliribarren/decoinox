@@ -1,0 +1,110 @@
+footer {
+    background-color: black;
+    padding-top: 3rem;
+    border-top: 1px solid #CBBFB1;
+    overflow: hidden;
+
+    .line {
+        width: 85%;
+        height: 1px;
+        background-color: white;
+    }
+
+    .links-footer {
+        width: 100%;
+
+        h4 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .redes-logo-footer {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .redes-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        a {
+            font-family: roboto;
+            font-size: 1.8rem;
+            color: var(--Amarillo, #CBBFB1);
+            margin: 1rem 0;
+            display: flex;
+
+            img {
+                margin-right: 1rem;
+
+                width: 2rem;
+                height: 2rem;
+
+            }
+
+
+
+        }
+
+    }
+
+    h5 {
+        margin: 0.8rem 0 !important;
+    }
+
+    .first-h5 {
+        margin-top: 1.8rem !important;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .redes-logo-footer {
+        margin: 0;
+        margin-bottom: 4rem;
+
+        .col-sm-6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    .links-footer {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .redes-footer {
+        a {
+            text-align: center !important;
+        }
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .links-footer {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        h4,
+        h5 {
+            text-align: center !important;
+        }
+    }
+
+    .redes-logo-footer {
+        img {
+            width: 14rem;
+        }
+    }
+}

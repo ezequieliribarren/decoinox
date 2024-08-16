@@ -1,0 +1,139 @@
+#contacto {
+    background: linear-gradient(180deg, #484847 0%, #2D2D2B 100%);
+
+    h2 {
+        color: #CBBFB1;
+        font-family: cormorant;
+        font-size: 5rem;
+    }
+
+    .contenedor-formulario {
+        border-right: 1px solid #FE0;
+
+    }
+
+    #contactForm {
+        width: 100%;
+
+        .form-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0;
+
+            label {
+                color: white;
+                font-size: 1.8rem;
+                font-family: roboto-bold;
+                margin-bottom: 0.2rem;
+
+            }
+
+            input,
+            textarea {
+                width: 90%;
+                height: 4.6rem;
+                border-radius: 5px;
+                background: #D6D6DD;
+            }
+
+            textarea {
+                height: 20rem;
+                margin-bottom: 1rem;
+            }
+
+            input::placeholder,
+            textarea::placeholder {
+                padding-left: 1rem;
+                padding-top: 1rem;
+                font-size: 1.6rem;
+            }
+
+
+        }
+
+        .email-celular {
+            flex-direction: row;
+            width: 95%;
+
+            div {
+                width: 50%;
+
+            }
+
+        }
+
+    }
+
+    .redes-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            background-color: transparent;
+            width: 30rem;
+            height: 4.8rem;
+            margin: 1.5rem;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            border-radius: 25px 5px;
+            border: 1px #FFF solid;
+
+
+
+
+
+            img {
+                width: 2.5rem;
+                margin-right: 0.7rem;
+            }
+
+            h3 {
+                color: black;
+                font-family: roboto-regular;
+                font-size: 1.8rem;
+                padding-top: 0.5rem;
+                color: white;
+            }
+        }
+    }
+
+
+
+}
+
+@media (max-width: 1000px) {
+    .contenedor-formulario {
+        border-right: none !important;
+
+    }
+
+    #contacto {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 !important;
+
+        .form-group {
+            div {
+                padding: 0 !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+        }
+
+        .form-group,
+        #contactForm {
+            padding: 0 !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+    }
+}

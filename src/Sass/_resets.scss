@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+  
+  
+  @font-face {
+    font-family: "lucida";
+    src: url(/public/fonts/lucida-bright.ttf);
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "roboto";
+    src: url(/public/fonts/Roboto-Regular.ttf);
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "roboto-bold";
+    src: url(/public/fonts/Roboto-Bold.ttf);
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "cormorant";
+    src: url(/public/fonts/CormorantGaramond-Regular.ttf);
+    font-display: swap;
+  }
+
+a{
+  text-decoration: none;
+}
+
+h4{
+font-size: 2rem;
+}
+h5{
+  font-size: 1.8rem;
+}
+
+h4, h5{
+  color: #ffffff;
+}
+
+
+.button-2 {
+  border-radius: 25px 5px;
+  width: 17rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  font-family: roboto-bold;
+  background-color: #CBBFB1;
+  color: black;
+}
