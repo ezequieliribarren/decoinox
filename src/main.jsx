@@ -3,19 +3,25 @@ import ReactDOM from 'react-dom/client'
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Root from './Routes/Root';
 import './index.scss'
+import ProductoDetaill from './Components/ProductoDetail/ProductoDetail';
 
 
 
 
 const router = createHashRouter([
 
-
   {
     path: "/",
     element: (
       <Root />
     ),
-  }
+  },
+  {
+    path: "/producto/:title",
+    element: (
+      <ProductoDetaill />
+    ),
+  },
 ]);
 
 

@@ -1,54 +1,94 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-  
-  
-  @font-face {
-    font-family: "lucida";
-    src: url(/public/fonts/lucida-bright.ttf);
-    font-display: swap;
-  }
 
-  @font-face {
-    font-family: "roboto";
-    src: url(/public/fonts/Roboto-Regular.ttf);
-    font-display: swap;
-  }
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
 
-  @font-face {
-    font-family: "roboto-bold";
-    src: url(/public/fonts/Roboto-Bold.ttf);
-    font-display: swap;
-  }
+body {
+  background: var(--Gris-oscuro, #2D2D2B);
+}
 
-  @font-face {
-    font-family: "cormorant";
-    src: url(/public/fonts/CormorantGaramond-Regular.ttf);
-    font-display: swap;
-  }
+@font-face {
+  font-family: "lucida";
+  src: url(/public/fonts/lucida-bright.tt);
+  font-display: swap;
+}
 
-a{
+@font-face {
+  font-family: "roboto";
+  src: url(/public/fonts/Roboto-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url(/public/fonts/Roboto-Bold.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "cormorant";
+  src: url(/public/fonts/CormorantGaramond-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "fuggles";
+  src: url(/public/fonts/Fuggles-Regular.ttf);
+  font-display: swap;
+}
+
+a {
   text-decoration: none;
 }
 
-h4{
-font-size: 2rem;
+h2 {
+  color: var(--Blanco, #FFF);
+  font-family: lucida;
+  font-size: 3rem;
+  font-weight: 600;
 }
-h5{
+
+h3 {
+  font-family: lucida;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
   font-size: 1.8rem;
 }
 
-h4, h5{
+h4,
+h5 {
   color: #ffffff;
 }
 
+p {
+  font-family: roboto;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.button-1 {
+  width: 226px;
+  height: 43.395px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 2px solid var(--beige, #CBBFB1);
+  color: var(--beige, #CBBFB1);
+  font-family: roboto-bold;
+  font-size: 18px;
+  background: transparent;
+
+}
 
 .button-2 {
   border-radius: 25px 5px;
@@ -58,4 +98,52 @@ h4, h5{
   font-family: roboto-bold;
   background-color: #CBBFB1;
   color: black;
+}
+
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #CBBFB1;
+}
+
+
+// Typed Container
+
+.typed-container {
+  width: 80rem;
+  height: 170px;
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(2.5px);
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  z-index: 10; // Asegura que el texto esté encima del carrusel
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  h4 {
+    font-family: fuggles;
+    font-family: 700;
+    font-size: 6rem;
+    color: black;
+  }
+
+  .typed {
+    padding-left: 3%;
+  }
+
+  #typed-text {
+    color: rgb(0, 0, 0); // Cambia el color del texto según sea necesario
+    font-size: 4rem !important; // Ajusta el tamaño del texto   
+    font-family: lucida;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+
 }
