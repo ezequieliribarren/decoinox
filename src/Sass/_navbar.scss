@@ -1,3 +1,6 @@
+
+
+
 .up-navbar {
     display: flex;
     justify-content: center;
@@ -6,15 +9,20 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 1px solid var(--beige, #CBBFB1);
+    padding: 0.7rem 0;
 
     img {
-        width: 5rem;
+        width: 5.5rem;
     }
 }
 
 .navbar {
     background-color: black !important;
-    height: 5rem;
+    height: 5rem !important;
+    position: sticky ;
+    top: 0 ; 
+    z-index: 1111 ;
 }
 
 .navbar-nav {
@@ -32,11 +40,12 @@
     }
 
     .logo-navbar {
-        width: 38rem;
+        width: 42rem;
         display: flex !important;
         justify-content: end !important;
+
         img {
-            width: 13rem;
+            width: 16rem;
         }
     }
 

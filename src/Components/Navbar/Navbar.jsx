@@ -6,7 +6,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const Navbar = () => {
     return (
-        <div>
+        <>
             <div className="up-navbar">
                 <img src="images/logo.png" alt="Logo" />
             </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-        </div>
+        </>
 
     )
 }

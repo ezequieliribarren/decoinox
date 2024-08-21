@@ -1,14 +1,16 @@
 #contacto {
     background: linear-gradient(180deg, #484847 0%, #2D2D2B 100%);
+    border-top: solid 2px #CBBFB1;
 
     h2 {
         color: #CBBFB1;
-        font-family: cormorant;
+        font-family: lucida;
         font-size: 5rem;
     }
 
     .contenedor-formulario {
-        border-right: 1px solid #FE0;
+        border-right: 1px solid #CBBFB1;
+        margin-top: 2rem;
 
     }
 
@@ -93,7 +95,7 @@
 
             h3 {
                 color: black;
-                font-family: roboto-regular;
+                font-family: roboto;
                 font-size: 1.8rem;
                 padding-top: 0.5rem;
                 color: white;

@@ -10,15 +10,16 @@
 
     h3 {
         color: white;
-        font-family: cormorant;
+        font-family: lucida;
         font-size: 5rem;
     }
 
     p {
         color: #FFF;
         font-family: roboto;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin: 1.5rem 0;
+        width: 90%;
 
     }
 
@@ -28,8 +29,8 @@
 
     .contenedor-nosotros {
         border-radius: 53px;
-        background: rgba(255, 255, 255, 0.20);
-        padding: 5rem 3rem;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.08) 98.17%);
+                padding: 3rem 2rem;
 
     }
 
@@ -40,7 +41,7 @@
     }
 
     .slider-nosotros {
-        margin-top: 6rem;
+        margin-top: 4rem;
 
     }
 

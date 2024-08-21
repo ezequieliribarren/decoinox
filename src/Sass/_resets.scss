@@ -20,6 +20,13 @@ body {
 }
 
 @font-face {
+  font-family: "lucida-bold";
+  src: url(/public/fonts/Lucida\ Bright\ Demibold.ttf);
+  font-display: swap;
+}
+
+
+@font-face {
   font-family: "roboto";
   src: url(/public/fonts/Roboto-Regular.ttf);
   font-display: swap;
@@ -51,7 +58,6 @@ h2 {
   color: var(--Blanco, #FFF);
   font-family: lucida;
   font-size: 3rem;
-  font-weight: 600;
 }
 
 h3 {
@@ -64,6 +70,7 @@ h4 {
 
 h5 {
   font-size: 1.8rem;
+  font-family: roboto;
 }
 
 h4,
@@ -74,7 +81,7 @@ h5 {
 p {
   font-family: roboto;
   color: white;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 .button-1 {
@@ -85,7 +92,7 @@ p {
   border: 2px solid var(--beige, #CBBFB1);
   color: var(--beige, #CBBFB1);
   font-family: roboto-bold;
-  font-size: 18px;
+  font-size: 16px;
   background: transparent;
 
 }
@@ -146,4 +153,16 @@ p {
   }
 
 
+}
+
+.slide {
+  height: 80vh;
+
+  .carousel-inner {
+    height: 100%;
+  }
+
+  img {
+    height: 100%;
+  }
 }

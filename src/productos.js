@@ -12,11 +12,12 @@ export const productos = [
     modelos: {
       "modelo-1": {
         nombre: "Modelo Alux",
+        nombre2: "Modelo<br />Alux",
         img1: 'images/productos/cerramientos/alux/1.png',
         img2: 'images/productos/cerramientos/alux/2.png',
         img3: 'images/productos/cerramientos/alux/1.png',
         img4: 'images/productos/cerramientos/alux/2.png',
-        descripcion: "Este modelo consta de un perfil de aluminio extruido, anodizado en color gris y fijado mediante anclaje químico al piso refractario de la pileta, cubriendo el perímetro de la misma. Se completa con vidrios templados o laminados de 10 mm que ofrecen seguridad, al mismo tiempo que no interrumpen la vista, dando al ambiente la naturalidad soñada. Las puertas incluyen bisagras en acero inoxidable y el cierre puede ser mediante pasador o cerradura con llave. Todo en acero inoxidable."
+        descripcion: "Este modelo consta de un perfil de aluminio extruido, anodizado en color gris y fijado mediante anclaje químico al piso refractario de la pileta, cubriendo el perímetro de la misma. Se completa con vidrios templados o laminados de 10 mm que ofrecen seguridad, al mismo tiempo que no interrumpen la vista, dando al ambiente la naturalidad soñada.  Las puertas incluyen bisagras en acero inoxidable y el cierre puede ser mediante pasador o cerradura con llave. Todo en acero inoxidable."
       },
       "modelo-2": {
         nombre: "Modelo Espiga",
@@ -24,7 +25,7 @@ export const productos = [
         img2: 'images/productos/cerramientos/espiga/2.png',
         img3: 'images/productos/cerramientos/espiga/1.png',
         img4: 'images/productos/cerramientos/espiga/2.png',
-        descripcion: "Este modelo consta de soportes en forma de espiga confeccionados en acero inoxidable 304 con terminación pulido esmerilado. Se fijan al piso refractario de la pileta mediante varillas de acero inoxidable con fijación química. Están diseñadas para colocar vidrios templados de 10 a 15 mm que ofrecen seguridad y no interrumpen la vista dando al ambiente una naturalidad inmejorable. Las puertas incluyen bisagras en acero inoxidable y el cierre puede ser mediante pasador o cerradura con llave. Todo en acero inoxidable."
+        descripcion: "Este modelo consta de soportes en forma de espiga confeccionados en acero inoxidable 304 con terminación pulido esmerilado. Se fijan al piso refractario de la pileta mediante varillas de acero inoxidable con fijación química. Están diseñadas para colocar vidrios templados de 10 a 15 mm que ofrecen seguridad y no interrumpen la vista dando al ambiente una naturalidad inmejorable. <br />Las puertas incluyen bisagras en acero inoxidable y el cierre puede ser mediante pasador o cerradura con llave. Todo en acero inoxidable."
       }
     }
   },

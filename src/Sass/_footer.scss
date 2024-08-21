@@ -22,12 +22,17 @@ footer {
         display: flex;
         justify-content: start;
         align-items: center;
+        padding-left: 7%;
     }
 
     .redes-footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        h3{
+            font-family: roboto;
+        }
 
 
         a {
@@ -52,7 +57,9 @@ footer {
     }
 
     h5 {
-        margin: 0.8rem 0 !important;
+        margin: 1rem 0.5rem !important;
+        padding: 0.5rem;
+
     }
 
     .first-h5 {

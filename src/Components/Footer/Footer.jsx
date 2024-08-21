@@ -5,9 +5,9 @@ const Footer = () => {
 
     return (
         <footer >
-            <div className='container'>
+            <div className='container-fluid'>
             <div className="row">
-                <div className="col-lg-6 redes-logo-footer">
+                <div className="col-lg-4 redes-logo-footer">
                     <div className="row">
                         <div className='col-sm-6'>
                             <img src="images/logo-footer.png" alt="Footer" />
@@ -23,9 +23,9 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-8">
                     <div className="row links-footer">
-                        <div className="col-md-3"><Link><h4>Nosotros</h4></Link></div>
+                        <div className="col-md-2"><Link><h4>Nosotros</h4></Link></div>
                         <div className="col-md-3">
                             <Link><h4>Productos</h4></Link>
                             <Link><h5 className='first-h5'>Carramientos de piletas</h5></Link>

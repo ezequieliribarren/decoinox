@@ -15,7 +15,10 @@ const Productos = () => {
             <div className="card" key={producto.id}>
               <Link to={`/producto/${encodeURIComponent(slug)}`} className="card-link">
                 <img src={producto.imagen} alt={producto.titulo} className="card-image" />
-                <h3>{producto.titulo} <br /><span className='ver-mas-producto'>+</span></h3>
+                <div className= "card-title">
+                  <h3>{producto.titulo}</h3>
+                </div>
+                    
                 <p className="card-description">
                   {producto.descripcion}
                 </p>

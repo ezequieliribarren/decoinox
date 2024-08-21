@@ -6,8 +6,8 @@ import imagenesData from '../../nosotros.json';
 
 const Nosotros = () => {
     const settings = {
-        centerMode: false,
-        centerPadding: '0px',
+        centerMode: true,
+        centerPadding: '120px',
         slidesToShow: 4,
         slidesToScroll: 1,
         speed: 500,
@@ -58,7 +58,7 @@ const Nosotros = () => {
                 <div className="row">
                     <Slider className='slider-nosotros' {...settings}>
                         {imagenesData.imagenes.map((imagen, index) => (
-                            <div key={index}>
+                            <div className='item-slider-nosotros' key={index}>
                                 <img src={imagen.url} alt={`Imagen ${index + 1}`} />
                             </div>
                         ))}

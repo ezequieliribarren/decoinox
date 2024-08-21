@@ -9,6 +9,7 @@ import { productos } from '../productos'; // Ajusta la ruta si es necesario
 
 
 
+
 const Root = () => {
   const titles = productos.map(producto => producto.titulo);
 
