@@ -8,7 +8,10 @@ const Navbar = () => {
     return (
         <>
             <div className="up-navbar">
-                <img src="images/logo.png" alt="Logo" />
+                <Link to="/">
+                    <img src="images/logo.png" alt="Logo" />
+                </Link>
+
             </div>
             <nav className="navbar navbar-expand-lg bg-dark">
                 <div className="container-fluid ">
@@ -22,21 +25,54 @@ const Navbar = () => {
                                 <a href=""><img src="images/mail.png" alt="Mail" /></a>
                             </div>
                             <div className='logo-navbar'>
-                                <img src="images/logo-text.png" alt="Logo" />
+                                <Link to="/">
+                                    <img src="images/logo-text.png" alt="Logo" />
+                                </Link>
                             </div>
                             <div className='d-flex align-items-center links-navbar'>
                                 <li className="nav-item">
-                                    <Link className='nav-link'>
+                                    <Link className='nav-link' to="#nosotros">
                                         Nosotros
                                     </Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className='nav-link'>
+                                <li className="nav-item dropdown">
+                                    <Link className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Productos
                                     </Link>
+                                    <ul className="dropdown-menu">
+                                        <li>
+                                            <Link to="/producto/cerramientos-de-piletas">
+                                                Cerramientos de piletas
+                                            </Link>
+                                            <Link to="/producto/barandas-para-escaleras">
+                                                Barandas para escaleras
+                                            </Link>
+                                            <Link to="/producto/pasamanos-para-interiores-y-exteriores">
+                                                Pasamanos para interiores y exteriores
+                                            </Link>
+                                            <Link to="/producto/rejillas-de-desagüe-para-duchas">
+                                               Rejillas de desagüe para duchas
+                                            </Link>
+                                            <Link to="/producto/cerramientos-de-piletas">
+                                                Cerramientos de piletas
+                                            </Link>
+                                            <Link to="/producto/cerramientos-de-piletas">
+                                                Cerramientos de piletas
+                                            </Link>
+                                            <Link to="/producto/cerramientos-de-piletas">
+                                                Cerramientos de piletas
+                                            </Link>
+                                            <Link to="/producto/cerramientos-de-piletas">
+                                                Cerramientos de piletas
+                                            </Link>
+                                            <Link to="/producto/cerramientos-de-piletas">
+                                                Cerramientos de piletas
+                                            </Link>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className='nav-link contacto-navbar'>
+                                    <Link className='nav-link contacto-navbar' to="#contacto">
                                         CONTACTO
                                     </Link>
                                 </li>

@@ -18,19 +18,28 @@ const Nosotros = () => {
         arrows: false,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 1300,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 4,
+                    centerMode: false,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 1000,
                 settings: {
-                    centerMode: true,
-                    slidesToShow: 1
-                }
+                    slidesToShow: 3,
+                    centerMode: false,
+                },
+            },
+            {
+                breakpoint: 760,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                },
             }
         ]
+        
     };
 
     return (

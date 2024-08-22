@@ -166,3 +166,39 @@ p {
     height: 100%;
   }
 }
+
+// Whatsapp
+.contenedor-whatsapp {
+  z-index: 1111;
+
+  .h4-whatsapp {
+    font-size: 1.6rem;
+    font-family: roboto;
+    text-align: center;
+  }
+
+}
+
+// Redes Call Action
+.redes-call-action {
+  width: 41px;
+  height: 153px;
+  border-radius: 10px 0px 0px 10px;
+  background: rgba(0, 0, 0, 0.50);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  right: 0;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 111;
+  div{
+    margin: 0.5rem 0;
+
+    :hover{
+      transform: scale(1.05);
+    }
+  }
+}

@@ -18,7 +18,7 @@ const Footer = () => {
                                 <h3>info@decoinox.com.ar</h3>
                             </a>
                             <a href="https://www.instagram.com/"><img src="images/ig.png" alt="Instagram Baires Flights" /> <h3>@decoinox</h3></a>
-                            <a href="https://wa.me/+5491123645019?text=Hola,%20estoy%20en%20la%20página%20de%Decoinox%20y%20quiero%20pedir%20más%20información"><img src="images/wp-2.png" alt="Whatsapp" /><h3>+54 9 11 2364-5019</h3></a>
+                            <a href="https://wa.me/+5491123645019?text=Hola,%20estoy%20en%20la%20página%20de%Decoinox%20y%20quiero%20pedir%20más%20información"><img src="images/whatsapp.png" alt="Whatsapp" /><h3>+54 9 11 2364-5019</h3></a>
                         </div>
                     </div>
 
