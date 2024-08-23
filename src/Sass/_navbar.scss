@@ -1,6 +1,3 @@
-
-
-
 .up-navbar {
     display: flex;
     justify-content: center;
@@ -20,9 +17,9 @@
 .navbar {
     background-color: black !important;
     height: 5rem !important;
-    position: sticky ;
-    top: 0 ; 
-    z-index: 1111 ;
+    position: sticky;
+    top: 0;
+    z-index: 1111;
 }
 
 .navbar-nav {
@@ -40,7 +37,7 @@
     }
 
     .logo-navbar {
-        width: 42rem;
+        width: 44rem;
         display: flex !important;
         justify-content: end !important;
 
@@ -63,7 +60,7 @@
         text-decoration: none;
         font-family: roboto;
         font-size: 1.6rem;
-        margin: 0 0.8rem;
+        margin: 0 1rem;
     }
 
     .contacto-navbar {
@@ -76,6 +73,26 @@
         align-items: center;
         color: black;
         font-family: roboto-bold;
+    }
+
+    .dropdown{
+        color: white !important;
+    }
+
+    .dropdown-menu {
+        min-width: 25rem;
+        background: rgba(0, 0, 0, 0.70);
+        width: 100%;
+        color: white;
+
+        .nav-link {
+            border-bottom: solid 1px white;
+            color: #FFF;
+            font-family: roboto;
+            font-size: 18px;
+
+        }
+
     }
 
 }

@@ -41,31 +41,31 @@ const Navbar = () => {
                                     </Link>
                                     <ul className="dropdown-menu">
                                         <li>
-                                            <Link to="/producto/cerramientos-de-piletas">
+                                            <Link className='nav-link' to="/producto/cerramientos-de-piletas">
                                                 Cerramientos de piletas
                                             </Link>
-                                            <Link to="/producto/barandas-para-escaleras">
+                                            <Link className='nav-link' to="/producto/barandas-para-escaleras">
                                                 Barandas para escaleras
                                             </Link>
-                                            <Link to="/producto/pasamanos-para-interiores-y-exteriores">
+                                            <Link className='nav-link' to="/producto/pasamanos-para-interiores-y-exteriores">
                                                 Pasamanos para interiores y exteriores
                                             </Link>
-                                            <Link to="/producto/rejillas-de-desagüe-para-duchas">
+                                            <Link className='nav-link' to="/producto/rejillas-de-desagüe-para-duchas">
                                                Rejillas de desagüe para duchas
                                             </Link>
-                                            <Link to="/producto/cerramientos-de-piletas">
+                                            <Link className='nav-link' to="/producto/cerramientos-de-piletas">
                                                 Cerramientos de piletas
                                             </Link>
-                                            <Link to="/producto/cerramientos-de-piletas">
+                                            <Link className='nav-link' to="/producto/cerramientos-de-piletas">
                                                 Cerramientos de piletas
                                             </Link>
-                                            <Link to="/producto/cerramientos-de-piletas">
+                                            <Link className='nav-link' to="/producto/cerramientos-de-piletas">
                                                 Cerramientos de piletas
                                             </Link>
-                                            <Link to="/producto/cerramientos-de-piletas">
+                                            <Link className='nav-link' to="/producto/cerramientos-de-piletas">
                                                 Cerramientos de piletas
                                             </Link>
-                                            <Link to="/producto/cerramientos-de-piletas">
+                                            <Link className='nav-link' to="/producto/cerramientos-de-piletas">
                                                 Cerramientos de piletas
                                             </Link>
                                         </li>

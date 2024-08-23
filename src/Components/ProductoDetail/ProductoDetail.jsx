@@ -18,7 +18,7 @@ const ProductoDetaill = () => {
   }
 
   // Arreglo de las imágenes del producto
-  const images = [producto.img1, producto.img2, producto.img3, producto.img4];
+  const images = [producto.img1, producto.img2, producto.img3, producto.img4, producto.img5, producto.img6];
   const modelos = producto.modelos || {};
 
   const settings = {
@@ -28,15 +28,43 @@ const ProductoDetaill = () => {
     slidesToShow: 2.5,  // Muestra dos imágenes completas y media
     slidesToScroll: 1,
     centerPadding: '150', // Ajusta el padding para mostrar la media imagen desde la derecha,
-    arrows: true
+    arrows: true,
+    responsive: [
+      {
+          breakpoint: 1300,
+          settings: {
+              slidesToShow: 4,
+              centerMode: false,
+          }
+      },
+      {
+          breakpoint: 1000,
+          settings: {
+              slidesToShow: 3,
+              centerMode: false,
+          },
+      },
+      {
+          breakpoint: 760,
+          settings: {
+              slidesToShow: 2,
+              centerMode: false,
+          },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+            centerMode: false,
+        },
+    }
+  ]
   };
 
-  // Desplazar la página hacia arriba cuando se monta el componente
   useEffect(() => {
-    window.scrollTo(0, 0);  // Mueve el scroll al inicio de la página al cargar el componente
+    window.scrollTo(0, 0);  
   }, []);
 
-  // Actualiza el estado del scroll
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -58,7 +86,7 @@ const ProductoDetaill = () => {
         <div className="container-fluid p-4 header-description">
           <div className="row header-producto">
             {images.map((image, index) => (
-              <div className="col-md-2" key={index}>
+              <div className="col-2" key={index}>
                 <img src={image} alt={`Imagen ${index + 1} de ${producto.titulo}`} className="img-fluid" />
               </div>
             ))}
@@ -73,10 +101,10 @@ const ProductoDetaill = () => {
               </div>
               <div className="line"></div>
               <div className='row description-down'>
-                <div className='col-md-6 description-p'>
-                  <p>{producto.descripcion}</p>
+                <div className='col-md-8 description-p'>
+                  <p dangerouslySetInnerHTML={{ __html: producto.descripcion }}></p>
                 </div>
-                <div className='col-md-6 description-button'>
+                <div className='col-md-4 description-button'>
                   <button className="button-1">
                     <span className='description-button-span'><img src="images/reloj.png" alt="" /></span>
                     Rápida instalación

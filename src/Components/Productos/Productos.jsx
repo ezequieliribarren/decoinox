@@ -8,7 +8,6 @@ const Productos = () => {
       <h2>Nuestros Productos</h2>
       <div className="gallery">
         {productos.map((producto) => {
-          // Reemplazar espacios por guiones en el título
           const slug = producto.titulo.replace(/\s+/g, '-').toLowerCase();
 
           return (

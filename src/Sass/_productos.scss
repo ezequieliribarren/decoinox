@@ -17,14 +17,14 @@
 
   h3 {
     position: absolute;
-bottom: 15%;
+    bottom: 15%;
     left: 20px;
     color: white;
     z-index: 1;
     font-size: 2.3rem;
     font-family: lucida-bold;
     height: 1rem;
-width: 100%;  
+    width: 100%;
   }
 
   .card {
@@ -37,15 +37,17 @@ width: 100%;
     transition: transform 0.3s ease;
     cursor: pointer;
   }
+
   .card::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.941) 100%);
-    pointer-events: none; /* Permite hacer clic a través de la sombra */
+    pointer-events: none;
+    /* Permite hacer clic a través de la sombra */
   }
 
   .card:hover {
@@ -111,6 +113,17 @@ width: 100%;
   background: rgba(0, 0, 0, 0.60);
   box-shadow: 10px 10px 25px 0px rgba(255, 255, 255, 0.20);
 
+  .ul-description {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    li {
+      margin: 0 1rem;
+      list-style: none;
+    }
+  }
+
   .description-slogan {
     padding-left: 1rem;
 
@@ -161,7 +174,8 @@ width: 100%;
 }
 
 .modelo-1,
-.modelo-2, .modelo-3 {
+.modelo-2,
+.modelo-3 {
 
   margin-top: 4rem;
 
@@ -193,7 +207,6 @@ width: 100%;
 
   /* Estilo personalizado para la flecha derecha */
   .slick-next {
-
     width: 300px;
     height: 100%;
     background: rgba(56, 56, 56, 0.246) 50%;
@@ -232,28 +245,148 @@ width: 100%;
       border-right: 2px solid #CBBFB1;
       width: 40%;
       height: 25rem;
+
       .h3-designe {
         color: #CBBFB1;
         text-align: right;
         font-family: lucida;
-        font-size: 8rem;
+        font-size: 6rem;
         font-weight: 600;
         padding-right: 2rem;
       }
     }
 
-    .modelo-p{
+    .modelo-p {
       width: 50%;
-       .p-modelo {
-      width: 80%;
-      padding-left: 2rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
 
-    }   
+      .p-modelo {
+        width: 80%;
+        padding-left: 2rem;
+
+      }
     }
 
 
 
   }
 
+
+}
+
+@media (max-width: 1100px) {
+  .h3-designe {
+    font-size: 4.5rem !important;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .description-p {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .modelo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .h3-designe {
+      font-size: 3.5rem !important;
+    }
+  }
+
+}
+
+@media (max-width: 760px) {
+  .modelo-title{
+     .h3-designe {
+    font-size: 2.5rem !important;
+  } 
+  }
+
+  .modelo-p {
+    p {
+      font-size: 1.4rem !important;
+    }
+  }
+
+
+  .description-title {
+    h2 {
+      font-size: 4rem !important;
+    }
+  }
+
+  .description-down {
+    .description-button {
+      display: none !important;
+    }
+  }
+
+  .header-producto .col-2 {
+    display: none;
+  }
+
+  .header-producto .col-2:nth-child(-n+4) {
+    display: block;
+    flex: 1 0 25%;
+    /* Ajusta para mostrar 4 imágenes */
+  }
+
+  .slick-next {
+    width: 200px;
+  }
+
+  .slick-next::before {
+    width: 200px;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .description-title {
+    h2 {
+      font-size: 3rem !important;
+    }
+  }
+
+  .header-producto .col-2 {
+    display: none;
+  }
+
+  .header-producto .col-2:nth-child(-n+2) {
+    display: block;
+    flex: 1 0 50%;
+  }
+
+  .slick-next {
+    width: 180px !important;
+    height: 150px !important;
+    background-color: transparent !important;
+  }
+
+  .slick-next::before {
+    width: 180px !important;
+    height: 80px !important;
+
+  }
+.modelo-title{
+  border: none !important;
+  width: 100% !important;
+
+  .h3-designe{
+   font-size: 3.2rem !important;   
+   padding: 0 !important;
+  }
+
+}
+  .modelo-p{
+    display: none !important;
+  }
 
 }

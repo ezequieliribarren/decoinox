@@ -4,7 +4,7 @@ import React from 'react';
 
 const Carousel = () => {
   return (
-    <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+    <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img src="images/1.png" className="d-block w-100" alt="" />

@@ -150,6 +150,7 @@ p {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 2rem;
   }
 
 
@@ -194,11 +195,47 @@ p {
   align-items: center;
   justify-content: center;
   z-index: 111;
-  div{
+
+  div {
     margin: 0.5rem 0;
 
-    :hover{
+    :hover {
       transform: scale(1.05);
     }
   }
+}
+
+
+@media (max-width: 1170px) {
+  .typed-container {
+    width: 55rem;
+    height: 90px;
+    bottom: 12%;
+
+    h4 {
+      font-family: fuggles;
+      font-family: 700;
+      font-size: 4rem;
+      color: black;
+    }
+
+    .typed {
+      padding-left: 3%;
+    }
+
+    #typed-text {
+      font-size: 2.5rem !important; // Ajusta el tamaño del texto   
+      height: 2rem;
+
+    }
+
+
+  }
+
+}
+
+@media (max-width: 1050px) {
+.typed-container{
+  display: none !important;
+}
 }
