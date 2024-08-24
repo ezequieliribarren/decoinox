@@ -3,7 +3,7 @@ export const productos = [
     id: 1,
     imagen: 'images/productos/1.png',
     titulo: 'Cerramientos de piletas',
-    subtitulo: "Nuestros cerramientos de pileta son los más elegidos del mercado por su estilo, durabilidad, simpleza y capacidad de integrarse a cualquier ambiente de manera orgánica. Ideal para el cuidado de su familia y mascotas.",
+    subtitulo: "Nuestros cerramientos de pileta son los más elegidos del mercado por su estilo, durabilidad y simpleza.",
     descripcion: 'Nuestros cerramientos de pileta son los más elegidos del mercado por su estilo, durabilidad, simpleza y capacidad de integrarse a cualquier ambiente de manera orgánica.<br/>Ideal para el cuidado de su familia y mascotas.',
     slug: 'cerramientos-de-piletas',
     img1: 'images/productos/cerramientos/1.png',
@@ -42,7 +42,7 @@ export const productos = [
     id: 2,
     imagen: 'images/productos/2.png',
     titulo: 'Barandas para escaleras',
-    subtitulo: "Contamos con 3 modelos que pueden adaptarse perfectamente a cualquier ambientación otorgando estilo y seguridad a tu hogar.",
+    subtitulo: "Contamos con 3 modelos que pueden adaptarse a cualquier ambientación otorgando estilo y seguridad a tu hogar.",
     descripcion: 'Contamos con 3 modelos que pueden adaptarse perfectamente a cualquier ambientación otorgando estilo y seguridad a tu hogar.',
     slug: 'barandas-para-escaleras',
     img1: 'images/productos/barandas/1.jpg',
@@ -115,24 +115,23 @@ export const productos = [
     img6: 'images/productos/pasamanos/6.jpeg',
     modelos: {
       "modelo-1": {
-        nombre: "Modelo Berlín",
+        nombre: "Nuestras obras",
         nombre2: "Diseño 100%<br />adaptado a tus<br />espacios",
         imagenes: {
-          img1: 'images/productos/barandas/berlin/1.jpg',
-          img2: 'images/productos/barandas/berlin/2.jpg',
-          img3: 'images/productos/barandas/berlin/3.jpg',
-          img4: 'images/productos/barandas/berlin/4.jpg',
-          img5: 'images/productos/barandas/berlin/5.jpg',
-          img6: 'images/productos/barandas/berlin/6.jpg',
+          img1: 'images/productos/pasamanos/1.jpeg',
+          img2: 'images/productos/pasamanos/2.jpeg',
+          img3: 'images/productos/pasamanos/3.jpeg',
+          img4: 'images/productos/pasamanos/4.jpeg',
+          img5: 'images/productos/pasamanos/5.jpeg',
+          img6: 'images/productos/pasamanos/6.jpeg',
         },
         descripcion: "- 100% personalizado <br/><br/>- Durabilidad inmejorable <br/><br/>- Estilo único <br/><br/>- Seguridad garantizada <br/><br/>"
       }}
   },
   {
-    id: 4,
     imagen: 'images/productos/4.png',
     titulo: 'Rejillas de desagüe para duchas',
-    subtitulo: "Nuestros modelos están íntegramente realizados en acero inoxidable 304 pulido esmerilado de 1mm de espesor que se integran de manera perfecta al piso del espacio que elijas.",
+    subtitulo: "Realizados en acero inoxidable 304 pulido esmerilado de 1mm, se integran de perfecto al piso del espacio que elijas.",
     descripcion: 'Lo último en diseño para desagües de ducha, baños y lavaderos.<br/>Nuestros modelos están íntegramente realizados en acero inoxidable 304 pulido esmerilado de 1mm de espesor que se integran de manera perfecta al piso del espacio que elijas.<br/>Contamos con modelos con terminación en acero inoxidable, con diseños que suman detalles de estilo único a sus ambientes, y otros que pueden incluir terminación en el mismo material de sus pisos para unificar la vista del espacio.<br/>El sistema de nuestros desagües permite drenar una mayor cantidad de agua impidiendo el retorno de la misma y son muy fáciles de limpiar. Apto para silla de ruedas',
     slug: 'rejillas-de-desagüe-para-duchas',
     img1: 'images/productos/rejillas-duchas/1.jpg',
@@ -143,15 +142,15 @@ export const productos = [
     img6: 'images/productos/rejillas-duchas/6.jpg',
     modelos: {
       "modelo-1": {
-        nombre: "Modelo Berlín",
+        nombre: "Nuestras obras",
         nombre2: "Diseño 100%<br />adaptado a tus<br />espacios",
         imagenes: {
-          img1: 'images/productos/barandas/berlin/1.jpg',
-          img2: 'images/productos/barandas/berlin/2.jpg',
-          img3: 'images/productos/barandas/berlin/3.jpg',
-          img4: 'images/productos/barandas/berlin/4.jpg',
-          img5: 'images/productos/barandas/berlin/5.jpg',
-          img6: 'images/productos/barandas/berlin/6.jpg',
+          img1: 'images/productos/rejillas-duchas/1.jpg',
+          img2: 'images/productos/rejillas-duchas/2.jpg',
+          img3: 'images/productos/rejillas-duchas/3.jpg',
+          img4: 'images/productos/rejillas-duchas/4.jpg',
+          img5: 'images/productos/rejillas-duchas/5.jpg',
+          img6: 'images/productos/rejillas-duchas/6.jpg',
         },
                descripcion: "- 100% personalizado <br/><br/>- Durabilidad inmejorable <br/><br/>- Estilo único <br/><br/>- Seguridad garantizada <br/><br/>"
       }}
@@ -171,15 +170,15 @@ export const productos = [
     img6: 'images/productos/revestimientos/6.jpg',
     modelos: {
       "modelo-1": {
-        nombre: "Modelo Berlín",
+        nombre: "Nuestras obras",
         nombre2: "Diseño 100%<br />adaptado a tus<br />espacios",
         imagenes: {
-          img1: 'images/productos/barandas/berlin/1.jpg',
-          img2: 'images/productos/barandas/berlin/2.jpg',
-          img3: 'images/productos/barandas/berlin/3.jpg',
-          img4: 'images/productos/barandas/berlin/4.jpg',
-          img5: 'images/productos/barandas/berlin/5.jpg',
-          img6: 'images/productos/barandas/berlin/6.jpg',
+          img1: 'images/productos/revestimientos/1.jpg',
+          img2: 'images/productos/revestimientos/2.png',
+          img3: 'images/productos/revestimientos/3.jpeg',
+          img4: 'images/productos/revestimientos/4.png',
+          img5: 'images/productos/revestimientos/5.jpg',
+          img6: 'images/productos/revestimientos/6.jpg',
         },
                descripcion: "- 100% personalizado <br/><br/>- Durabilidad inmejorable <br/><br/>- Estilo único <br/><br/>- Seguridad garantizada <br/><br/>"
       }}
@@ -189,7 +188,7 @@ export const productos = [
     id: 6,
     imagen: 'images/productos/6.png',
     titulo: 'Chapas decorativas',
-    subtitulo: "La opción perfecta para dar un toque único a puertas, portones, balcones, biombos, separadores o generar puntos focales de decoración en su patio o jardín.",
+    subtitulo: "La opción perfecta para dar un toque único a puertas, portones, balcones, biombos y separadores.",
     descripcion: 'La opción perfecta para dar un toque único a puertas, portones, balcones, biombos, separadores o generar puntos focales de decoración en su patio o jardín.<br/>Confeccionadas en acero inoxidable 304, pulido esmerilado y mate, ofrecen un estilo único a sus espacios interiores y exteriores con una duración de por vida ya que son resistentes a la intemperie.',
     slug: 'chapas-decorativas',
     img1: 'images/productos/chapas/1.png',
@@ -200,15 +199,15 @@ export const productos = [
     img6: 'images/productos/chapas/6.jpg',
     modelos: {
       "modelo-1": {
-        nombre: "Modelo Berlín",
+        nombre: "Nuestras obras",
         nombre2: "Diseño 100%<br />adaptado a tus<br />espacios",
         imagenes: {
-          img1: 'images/productos/barandas/berlin/1.jpg',
-          img2: 'images/productos/barandas/berlin/2.jpg',
-          img3: 'images/productos/barandas/berlin/3.jpg',
-          img4: 'images/productos/barandas/berlin/4.jpg',
-          img5: 'images/productos/barandas/berlin/5.jpg',
-          img6: 'images/productos/barandas/berlin/6.jpg',
+          img1: 'images/productos/chapas/1.png',
+          img2: 'images/productos/chapas/2.jpg',
+          img3: 'images/productos/chapas/3.jpg',
+          img4: 'images/productos/chapas/4.jpg',
+          img5: 'images/productos/chapas/5.jpg',
+          img6: 'images/productos/chapas/6.jpg',
         },
                descripcion: "- 100% personalizado <br/><br/>- Durabilidad inmejorable <br/><br/>- Estilo único <br/><br/>- Seguridad garantizada <br/><br/>"
       }}
@@ -228,15 +227,15 @@ export const productos = [
     img6: 'images/productos/zocalos/5.jpg',
     modelos: {
       "modelo-1": {
-        nombre: "Modelo Berlín",
+        nombre: "Nuestras obras",
         nombre2: "Diseño 100%<br />adaptado a tus<br />espacios",
         imagenes: {
           img1: 'images/productos/barandas/berlin/1.jpg',
-          img2: 'images/productos/barandas/berlin/2.jpg',
-          img3: 'images/productos/barandas/berlin/3.jpg',
-          img4: 'images/productos/barandas/berlin/4.jpg',
-          img5: 'images/productos/barandas/berlin/5.jpg',
-          img6: 'images/productos/barandas/berlin/6.jpg',
+          img1: 'images/productos/zocalos/1.jpg',
+          img2: 'images/productos/zocalos/2.png',
+          img3: 'images/productos/zocalos/3.jpg',
+          img4: 'images/productos/zocalos/4.jpg',
+          img5: 'images/productos/zocalos/5.jpg',
         },
                descripcion: "- 100% personalizado <br/><br/>- Durabilidad inmejorable <br/><br/>- Estilo único <br/><br/>- Seguridad garantizada <br/><br/>"
       }}
@@ -256,15 +255,14 @@ export const productos = [
     img6: 'images/productos/rejillas-pluvial/5.jpg',
     modelos: {
       "modelo-1": {
-        nombre: "Modelo Berlín",
+        nombre: "Nuestras obras",
         nombre2: "Diseño 100%<br />adaptado a tus<br />espacios",
         imagenes: {
-          img1: 'images/productos/barandas/berlin/1.jpg',
-          img2: 'images/productos/barandas/berlin/2.jpg',
-          img3: 'images/productos/barandas/berlin/3.jpg',
-          img4: 'images/productos/barandas/berlin/4.jpg',
-          img5: 'images/productos/barandas/berlin/5.jpg',
-          img6: 'images/productos/barandas/berlin/6.jpg',
+          img1: 'images/productos/rejillas-pluvial/1.jpg',
+          img2: 'images/productos/rejillas-pluvial/2.jpeg',
+          img3: 'images/productos/rejillas-pluvial/3.jpg',
+          img4: 'images/productos/rejillas-pluvial/4.jpg',
+          img5: 'images/productos/rejillas-pluvial/5.jpg',
         },
                descripcion: "- 100% personalizado <br/><br/>- Durabilidad inmejorable <br/><br/>- Estilo único <br/><br/>- Seguridad garantizada <br/><br/>"
       }}
@@ -273,7 +271,7 @@ export const productos = [
     id: 9,
     imagen: 'images/productos/9.png',
     titulo: 'Rejillas de ventilación',
-    subtitulo: "Nuestros modelos de rejilla están íntegramente confeccionados en acero inoxidable 304, pulido esmerilado, lo que asegura una durabilidad de por vida que se suma a la elegancia.",
+    subtitulo: "Están íntegramente confeccionados en acero inoxidable 304, pulido esmerilado, lo que asegura una durabilidad de por vida.",
     descripcion: 'Nuestros modelos de rejilla están íntegramente confeccionados en acero inoxidable 304, pulido esmerilado, lo que asegura una durabilidad de por vida que se suma a la elegancia, estilo y diseño de sus ambientes.<br/>Contamos con distintas medidas estándar y también con medidas y diseños especiales a pedido<br/><ul><li>Rejilla de ventilación fija – Retorno / Extracción (acero inox esmerilado)<ul class="ul-description"><li>10x10 (muebles)</li><li>15x15</li><li>20x20</li><li>25x25</li><li>30x10</li><li>30x15</li><li>30x30</li><li>40x10</li><li>40x20</li></ul></li></ul>',
 
     slug: 'rejillas-de-ventilación',
@@ -285,15 +283,13 @@ export const productos = [
     img6: 'images/productos/rejillas-ventilacion/1.jpg',
     modelos: {
       "modelo-1": {
-        nombre: "Modelo Berlín",
+        nombre: "Nuestras obras",
         nombre2: "Diseño 100%<br />adaptado a tus<br />espacios",
         imagenes: {
-          img1: 'images/productos/barandas/berlin/1.jpg',
-          img2: 'images/productos/barandas/berlin/2.jpg',
-          img3: 'images/productos/barandas/berlin/3.jpg',
-          img4: 'images/productos/barandas/berlin/4.jpg',
-          img5: 'images/productos/barandas/berlin/5.jpg',
-          img6: 'images/productos/barandas/berlin/6.jpg',
+          img1: 'images/productos/rejillas-ventilacion/1.jpg',
+          img2: 'images/productos/rejillas-ventilacion/1.jpg',
+          img3: 'images/productos/rejillas-ventilacion/1.jpg',
+          img4: 'images/productos/rejillas-ventilacion/1.jpg',
         },
                descripcion: "- 100% personalizado <br/><br/>- Durabilidad inmejorable <br/><br/>- Estilo único <br/><br/>- Seguridad garantizada <br/><br/>"
       }}
@@ -302,7 +298,7 @@ export const productos = [
     id: 10,
     imagen: 'images/productos/10.png',
     titulo: 'Pasamanos y barandas doble homologado',
-    subtitulo: "Diseños adaptables a cualquier espacio, que cumplen con las normas del gobierno de la ciudad, sin dejar de dar el estilo buscado.",
+    subtitulo: "Diseños adaptables a cualquier espacio, que cumplen con las normas del gobierno de la ciudad.",
     descripcion: 'Diseños adaptables a cualquier espacio, que cumplen con las normas del gobierno de la ciudad, sin dejar de dar el estilo buscado. La opción perfecta para los accesos a sanatorios, edificios, locales, instituciones y bancos.',
     slug: 'pasamanos-y-barandas-doble-homologado',
     img1: 'images/productos/pasamanos-doble/1.jpg',
@@ -310,6 +306,19 @@ export const productos = [
     img3: 'images/productos/pasamanos-doble/3.jpg',
     img4: 'images/productos/pasamanos-doble/4.jpg',
     img5: 'images/productos/pasamanos-doble/4.jpg',
-    img6: 'images/productos/pasamanos-doble/4.jpg'
-  }
+    img6: 'images/productos/pasamanos-doble/4.jpg',
+    modelos: {
+      "modelo-1": {
+        nombre: "Nuestras obras",
+        nombre2: "Diseño 100%<br />adaptado a tus<br />espacios",
+        imagenes: {
+          img1: 'images/productos/pasamanos-doble/1.jpg',
+          img2: 'images/productos/pasamanos-doble/2.jpg',
+          img3: 'images/productos/pasamanos-doble/3.jpg',
+          img4: 'images/productos/pasamanos-doble/4.jpg',
+        },
+               descripcion: "- 100% personalizado <br/><br/>- Durabilidad inmejorable <br/><br/>- Estilo único <br/><br/>- Seguridad garantizada <br/><br/>"
+      }}
+  },
+
 ];

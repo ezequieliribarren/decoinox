@@ -30,7 +30,7 @@ footer {
         flex-direction: column;
         justify-content: center;
 
-        h3{
+        h3 {
             font-family: roboto;
         }
 
@@ -67,12 +67,27 @@ footer {
     }
 }
 
+.copy{
+    a{
+        color: white !important;
+        text-decoration: none !important;
+        font-size: 1.8rem;
+    }
+}
+
 
 
 @media (max-width: 1000px) {
     .redes-logo-footer {
         margin: 0;
         margin-bottom: 4rem;
+
+        justify-content: center !important;
+
+        .logo-footer {
+            width: 10rem;
+            margin-bottom: 2rem;
+        }
 
         .col-sm-6 {
             display: flex;
@@ -86,6 +101,20 @@ footer {
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
+
+        h4{
+            font-size: 2rem;
+        }
+
+        h5{
+            font-size: 1.6rem;
+        }
+    }
+
+    .copy{
+        a{
+            font-size: 1.6rem;
+        }
     }
 
     .redes-footer {
@@ -109,9 +138,4 @@ footer {
         }
     }
 
-    .redes-logo-footer {
-        img {
-            width: 14rem;
-        }
-    }
 }

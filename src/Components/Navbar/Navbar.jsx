@@ -1,30 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { HashLink as Link } from 'react-router-hash-link';
 
-
 const Navbar = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <>
             <div className="up-navbar">
                 <Link to="/">
                     <img src="images/logo.png" alt="Logo" />
                 </Link>
-
             </div>
             <nav className="navbar navbar-expand-lg bg-dark">
-                <div className="container-fluid ">
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                <div className="container-fluid">
+      
+                    
+                    <button
+                        className={`navbar-toggler ms-auto`} // Move the button to the right
+                        type="button"
+                        onClick={toggleMenu}
+                        style={{ backgroundColor: '#CBBFB1', borderColor: '#CBBFB1' }}
+                    >
+                        {isMenuOpen ? 'X' : '☰'} {/* Toggle between "X" and "☰" */}
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <div className='redes-navbar'>
                                 <a href=""><img src="images/ig.png" alt="Instagram" /></a>
                                 <a href=""><img src="images/mail.png" alt="Mail" /></a>
                             </div>
-                            <div className='logo-navbar'>
+                            <div className='logo-navbar d-none d-lg-block'>
                                 <Link to="/">
                                     <img src="images/logo-text.png" alt="Logo" />
                                 </Link>

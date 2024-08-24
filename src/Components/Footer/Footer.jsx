@@ -9,8 +9,8 @@ const Footer = () => {
             <div className="row">
                 <div className="col-lg-4 redes-logo-footer">
                     <div className="row">
-                        <div className='col-sm-6'>
-                            <img src="images/logo-footer.png" alt="Footer" />
+                        <div className='col-sm-6 contenedor-logo-footer'>
+                            <img className='logo-footer' src="images/logo-footer.png" alt="Footer" />
                         </div>
                         <div className='col-sm-6 redes-footer'>
                             <a href="mailto:info@decoinox.com.ar">
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
 
             <div className="row mt-3">
-                <div className='d-flex justify-content-center'>
+                <div className='d-flex justify-content-center copy'>
                     <h5><a href="https://versadigital.com.ar/">Diseñado y Desarrollado por <strong>Versa Digital</strong></a></h5>
                 </div>
 

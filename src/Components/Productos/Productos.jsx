@@ -19,7 +19,7 @@ const Productos = () => {
                 </div>
                 <p className="card-description">
                   {producto.subtitulo} <br />
-                  <p style={{fontSize: "3rem"}}>+</p>
+                  <p className='mas' style={{fontSize: "3rem"}}>+</p>
                 </p>
               </Link>
             </div>

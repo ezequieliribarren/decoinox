@@ -36,9 +36,9 @@
     }
 
     .img-nosotros {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
+        display: flex ;
+        align-items: center ;
+        justify-content: center ;
     }
 
     .slider-nosotros {
@@ -50,24 +50,23 @@
 
 @media (max-width: 980px) {
     .img-nosotros {
+display: flex !important;
+        justify-content: start !important;
         img {
-            width: 18rem;
+            width: 15rem !important;
         }
     }
 }
 
 @media (max-width: 480px) {
     .slider-nosotros {
-        display: flex !important;
-        justify-content: center !important;
+        display: none !important;
+    
+}
 
-        div {
-            margin: 0 !important;
-            width: 18rem;
-        }
-
-        img {
-            width: 100%;
-        }
+.img-nosotros {
+    img {
+        width: 10rem !important;
     }
+}
 }
