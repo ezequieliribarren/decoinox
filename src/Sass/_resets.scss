@@ -161,11 +161,15 @@ p {
 
   .carousel-inner {
     height: 100%;
+
+    img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: contain !important;
+    }
   }
 
-  img {
-    height: 100%;
-  }
+
 }
 
 // Whatsapp
@@ -205,12 +209,16 @@ p {
   }
 }
 
+.cel {
+  display: none;
+}
+
 
 @media (max-width: 1170px) {
   .typed-container {
     width: 55rem;
     height: 90px;
-    bottom: 12%;
+    bottom: 30%;
 
     h4 {
       font-family: fuggles;
@@ -234,8 +242,54 @@ p {
 
 }
 
-@media (max-width: 1050px) {
-.typed-container{
-  display: none !important;
+@media (max-width: 895px) {
+  .typed-container {
+    bottom: 40%;
+  }
 }
+
+@media (max-width: 776px) {
+  .typed-container {
+    bottom: 50%;
+  }
+}
+
+
+@media (max-width: 626px) {
+  .typed-container {
+    display: none !important;
+  }
+
+  .carousel {
+    img {
+      object-fit: contain !important;
+    }
+  }
+
+  .carousel {
+    height: 60rem !important;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .cel {
+    display: inherit;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .carousel{
+    height: 50rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .carousel{
+    height: 40rem !important;
+  }
 }
