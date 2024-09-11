@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { productos } from '../../productos';
-import Slider from 'react-slick'; // Importa el componente Slider
+import Slider from 'react-slick';
 import Layout from '../../Layout/Layout';
 import Contacto from '../Contacto/Contacto';
+import Whatsapp from '../Whatsapp/Whatsapp';
 
 const ProductoDetaill = () => {
   const { title } = useParams();
@@ -23,47 +24,23 @@ const ProductoDetaill = () => {
 
   const settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 2.5,  // Muestra dos imágenes completas y media
+    slidesToShow: 2.5,
     slidesToScroll: 1,
-    centerPadding: '150', // Ajusta el padding para mostrar la media imagen desde la derecha,
     arrows: true,
     responsive: [
-      {
-          breakpoint: 1300,
-          settings: {
-              slidesToShow: 4,
-              centerMode: false,
-          }
-      },
-      {
-          breakpoint: 1000,
-          settings: {
-              slidesToShow: 3,
-              centerMode: false,
-          },
-      },
-      {
-          breakpoint: 760,
-          settings: {
-              slidesToShow: 2,
-              centerMode: false,
-          },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-            slidesToShow: 1,
-            centerMode: false,
-        },
-    }
-  ]
+      { breakpoint: 1300, settings: { slidesToShow: 4, centerMode: false }},
+      { breakpoint: 1000, settings: { slidesToShow: 3, centerMode: false }},
+      { breakpoint: 760, settings: { slidesToShow: 2, centerMode: false }},
+      { breakpoint: 480, settings: { slidesToShow: 1, centerMode: false }},
+    ],
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);  
-  }, []);
+    // Desplaza la página al tope cada vez que cambia el parámetro `title`
+    window.scrollTo(0, 0);
+  }, [title]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -72,7 +49,7 @@ const ProductoDetaill = () => {
         setAnimated(true);
         setScrollY(currentScrollY);
       } else if (animated) {
-        setScrollY(Math.min(currentScrollY, 100)); // Limita el movimiento
+        setScrollY(Math.min(currentScrollY, 100));
       }
     };
 
@@ -83,6 +60,7 @@ const ProductoDetaill = () => {
   return (
     <Layout>
       <section id='producto-detalle'>
+        <Whatsapp />
         <div className="container-fluid p-4 header-description">
           <div className="row header-producto">
             {images.map((image, index) => (
@@ -112,9 +90,7 @@ const ProductoDetaill = () => {
                 </div>
               </div>
             </div>
-
             <div className="container-fluid">
-              {/* Itera sobre los modelos y renderiza un componente para cada uno */}
               {Object.keys(modelos).map((modeloKey, index) => {
                 const modelo = modelos[modeloKey];
                 return (
@@ -130,6 +106,7 @@ const ProductoDetaill = () => {
                     <div className='row modelo-description'>
                       <div className="col-md-6 modelo-title">
                         <h3 className='h3-designe' dangerouslySetInnerHTML={{ __html: modelo.nombre2 }}></h3>
+                        <a target='_blank' href="https://api.whatsapp.com/send/?phone=%2B5491123645019&text=Hola%2C+estoy+en+la+p%C3%A1gina+de+Decoinox+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n&type=phone_number&app_absent=0">CONSULTAR</a>
                       </div>
                       <div className="col-md-6 modelo-p">
                         <p className='p-modelo' dangerouslySetInnerHTML={{ __html: modelo.descripcion }}></p>

@@ -13,7 +13,6 @@ import Redes from '../Components/Redes/Redes'
 
 
 const Root = () => {
-  const titles = productos.map(producto => producto.titulo);
 
     // Desplazar la página hacia arriba cuando se monta el componente
     useEffect(() => {
@@ -26,7 +25,7 @@ const Root = () => {
       <Whatsapp/>
       <div style={{ position: 'relative' }}>
         <Carousel />
-        <TypedText titles={titles} />
+        <TypedText />
       </div>
       <main>
         <Productos />

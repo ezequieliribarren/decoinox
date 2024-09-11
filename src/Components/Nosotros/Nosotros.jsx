@@ -37,6 +37,13 @@ const Nosotros = () => {
                     slidesToShow: 2,
                     centerMode: false,
                 },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                },
             }
         ]
         

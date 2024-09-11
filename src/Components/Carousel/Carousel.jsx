@@ -9,11 +9,12 @@ const Carousel = () => {
     dots: false,
     infinite: true,
     arrows: false,
-    speed: 500,
+    speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
+    initialSlide: 0, 
     responsive: [
       {
         breakpoint: 768,

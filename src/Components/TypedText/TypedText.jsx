@@ -1,10 +1,14 @@
 import React, { useEffect } from 'react';
 import Typed from 'typed.js';
 
-const TypedText = ({ titles }) => {
+const TypedText = () => {
     useEffect(() => {
         const options = {
-            strings: titles, 
+            strings: [
+                "Diseños originales",
+                "Atención profesional",
+                "Productos de primera calidad"
+            ],
             typeSpeed: 50,
             backSpeed: 25,
             loop: true,
@@ -19,16 +23,15 @@ const TypedText = ({ titles }) => {
         return () => {
             typed.destroy();
         };
-    }, [titles]); // Actualiza el efecto si titles cambia
+    }, []);
 
     return (
         <div className='typed-container'>
             <div className='typed'>
                 <h4>Sueños hechos realidad</h4>
-                      <h5 id="typed-text"></h5>     
+                <h5 id="typed-text"></h5>     
             </div>
         </div >
-
     );
 };
 
