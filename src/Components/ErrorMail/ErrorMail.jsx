@@ -5,7 +5,7 @@ const MensajeError = () => {
 
   useEffect(() => {
     const redirectTimer = setTimeout(() => {
-      window.location.href = 'https://decoinox.com.ar/';
+      window.location.href = 'https://solucionesinox.com.ar/';
     }, 5000);
 
     const interval = setInterval(() => {

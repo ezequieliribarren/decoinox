@@ -1,4 +1,6 @@
-export const productos = [
+import { getAssetPath } from './utils/getAssetPath';
+
+const rawProductos = [
   {
     id: 1,
     imagen: 'images/productos/1.png',
@@ -328,5 +330,24 @@ export const productos = [
                descripcion: "- 100% personalizado <br/><br/>- Durabilidad inmejorable <br/><br/>- Estilo único <br/><br/>- Seguridad garantizada <br/><br/>"
       }}
   },
-
 ];
+
+const normalizeAssetPaths = (value) => {
+  if (Array.isArray(value)) {
+    return value.map(normalizeAssetPaths);
+  }
+
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, nestedValue]) => [key, normalizeAssetPaths(nestedValue)])
+    );
+  }
+
+  if (typeof value === 'string' && value.startsWith('images/')) {
+    return getAssetPath(value);
+  }
+
+  return value;
+};
+
+export const productos = rawProductos.map(normalizeAssetPaths);

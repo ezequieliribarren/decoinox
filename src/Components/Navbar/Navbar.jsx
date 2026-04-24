@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import { getAssetPath } from '../../utils/getAssetPath';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,19 +25,21 @@ const Navbar = () => {
         <>
             <div className="up-navbar">
                 <Link to="/" onClick={closeMenu}>
-                    <img src="images/logo.png" alt="Logo" />
+                    <img src={getAssetPath('images/logo-soluciones.png')} alt="Logo Soluciones Inox" />
                 </Link>
                 <div>
-                    <img className='logo-texto-up' src="images/logo-text.png" alt="Logo" />
+                    <img className='logo-texto-up' src={getAssetPath('images/logo-soluciones.png')} alt="Logo Soluciones Inox" />
                 </div>
 
             </div>
             <nav className="navbar navbar-expand-lg bg-dark">
                 <div className="container-fluid">
                     <button
-                        className={`navbar-toggler ms-auto`} // Move the button to the right
+                        className={`navbar-toggler ms-auto`}
                         type="button"
                         onClick={toggleMenu}
+                        aria-label="Abrir o cerrar menú de navegación"
+                        aria-controls="navbarSupportedContent"
                         style={{ backgroundColor: '#CBBFB1', borderColor: '#CBBFB1' }}
                     >
                         {isMenuOpen ? 'X' : '☰'} {/* Toggle between "X" and "☰" */}
@@ -50,17 +54,14 @@ const Navbar = () => {
 
                             </li>
                             <div className='logo-navbar d-none d-lg-block'>
-                                <Link to="/" onClick={() => { closeMenu(); top(); }}>
-                                    <img src="images/logo-text.jpeg" alt="Logo" />
-                                </Link>
                             </div>
                             <div className='d-flex align-items-center links-navbar'>
                                 <li className="nav-item">
                                 </li>
                                 <li className="nav-item">
-                                    <Link className='nav-link' to="/#nosotros" onClick={closeMenu}>
+                                    <HashLink className='nav-link' smooth to="/#nosotros" onClick={closeMenu}>
                                         Nosotros
-                                    </Link>
+                                    </HashLink>
                                 </li>
                                 <li className="nav-item dropdown">
                                     <Link
@@ -107,9 +108,9 @@ const Navbar = () => {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className='nav-link contacto-navbar' to="#contacto" onClick={closeMenu}>
+                                    <HashLink className='nav-link contacto-navbar' smooth to="/#contacto" onClick={closeMenu}>
                                         CONTACTO
-                                    </Link>
+                                    </HashLink>
                                 </li>
                             </div>
                         </ul>

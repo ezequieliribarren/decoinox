@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './Routes/Root';
 import './index.scss'
 import ProductoDetaill from './Components/ProductoDetail/ProductoDetail';
@@ -10,7 +10,7 @@ import MensajeError from './Components/ErrorMail/ErrorMail'
 
 
 
-const router = createHashRouter([
+const router = createBrowserRouter([
 
   {
     path: "/",

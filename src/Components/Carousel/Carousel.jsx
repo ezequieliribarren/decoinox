@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { getAssetPath } from '../../utils/getAssetPath';
 
 const Carousel = () => {
   // Configuración de Slick Carousel
@@ -30,13 +31,13 @@ const Carousel = () => {
       <div className="desktop">
         <Slider {...settings} className='slider-desktop'>
           <div className="carousel-item">
-            <img src="images/1.png" alt="Imagen 1" />
+            <img src={getAssetPath('images/1.png')} alt="Imagen 1" />
           </div>
           <div className="carousel-item">
-            <img src="images/2.png" alt="Imagen 2" />
+            <img src={getAssetPath('images/2.png')} alt="Imagen 2" />
           </div>
           <div className="carousel-item">
-            <img src="images/3.png" alt="Imagen 3" />
+            <img src={getAssetPath('images/3.png')} alt="Imagen 3" />
           </div>
         </Slider>
       </div>
@@ -44,13 +45,13 @@ const Carousel = () => {
       <div className="cel">
         <Slider {...settings} className='slider-cel'>
           <div className="carousel-item">
-            <img src="images/4.png" alt="Imagen 4" />
+            <img src={getAssetPath('images/4.png')} alt="Imagen 4" />
           </div>
           <div className="carousel-item">
-            <img src="images/5.png" alt="Imagen 5" />
+            <img src={getAssetPath('images/5.png')} alt="Imagen 5" />
           </div>
           <div className="carousel-item">
-            <img src="images/6.png" alt="Imagen 6" />
+            <img src={getAssetPath('images/6.png')} alt="Imagen 6" />
           </div>
         </Slider>
       </div>

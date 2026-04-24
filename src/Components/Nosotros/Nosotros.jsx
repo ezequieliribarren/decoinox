@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import imagenesData from '../../nosotros.json';
+import { getAssetPath } from '../../utils/getAssetPath';
 
 const Nosotros = () => {
     const settings = {
@@ -54,11 +55,11 @@ const Nosotros = () => {
             <div className="container contenedor-nosotros">
                 <div className="row description nosotros">
                     <div className="col-md-4 img-nosotros">
-                        <img className='img-nosotros-img' src="images/nosotros/logo-nosotros.png" alt="Decoinox" />
+                        <img className='img-nosotros-img' src={getAssetPath('images/nosotros/logo-nosotros.png')} alt="Soluciones - Inox" />
                     </div>
                     <div className="col-md-8">
                         <h2>Conocenos</h2>
-                        <h3>Somos Decoinox,</h3>
+                        <h3>Somos Soluciones - Inox,</h3>
                         <p >una empresa dedicada a convertir <strong>sueños</strong> en <strong>realidad</strong> utilizando productos de primera
                             calidad, diseños originales y atención profesional.</p>
                         <p>Nuestros trabajos en acero inoxidable y vidrio templado suman detalles de categoría que potencian
@@ -75,7 +76,7 @@ const Nosotros = () => {
                     <Slider className='slider-nosotros' {...settings}>
                         {imagenesData.imagenes.map((imagen, index) => (
                             <div className='item-slider-nosotros' key={index}>
-                                <img src={imagen.url} alt={`Imagen ${index + 1}`} />
+                                <img src={getAssetPath(imagen.url)} alt={`Imagen ${index + 1}`} />
                             </div>
                         ))}
                     </Slider>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { getAssetPath } from '../../utils/getAssetPath';
 
 const Whatsapp = () => {
   const [hover, setHover] = useState(false);
@@ -12,7 +13,7 @@ const Whatsapp = () => {
   }
 
   return (
-    <div
+    <a
       className='contenedor-whatsapp'
       style={{
         position: 'fixed',
@@ -24,8 +25,11 @@ const Whatsapp = () => {
         alignItems: 'center',
         justifyContent: 'space-between',
         cursor: 'pointer',
+        textDecoration: 'none' // Para evitar subrayado en el texto
       }}
-      onClick={() => window.location.href = 'https://api.whatsapp.com/send/?phone=%2B5491123645019&text=Hola%2C+estoy+en+la+p%C3%A1gina+de+Decoinox+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n&type=phone_number&app_absent=0'}
+      href='https://api.whatsapp.com/send/?phone=%2B5491123645019&text=Hola%2C+estoy+en+la+p%C3%A1gina+de+Soluciones Inox+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n&type=phone_number&app_absent=0'
+      target='_blank'
+      rel='noopener noreferrer'
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -50,7 +54,7 @@ const Whatsapp = () => {
         }}
       >
         <img
-          src={hover ? 'images/wp2.png' : 'images/wp.png'}
+          src={hover ? getAssetPath('images/wp2.png') : getAssetPath('images/wp.png')}
           alt="WhatsApp"
           style={{
             width: '60px',
@@ -59,7 +63,7 @@ const Whatsapp = () => {
           }}
         />
       </div>
-    </div>
+    </a>
   );
 };
 

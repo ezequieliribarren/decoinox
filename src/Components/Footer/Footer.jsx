@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import { getAssetPath } from '../../utils/getAssetPath';
 
 const Footer = () => {
     return (
@@ -9,19 +10,19 @@ const Footer = () => {
                     <div className="col-lg-4 redes-logo-footer">
                         <div className="row">
                             <div className='col-sm-6 contenedor-logo-footer'>
-                                <img className='logo-footer' src="images/logo-footer.png" alt="Footer Logo" />
+                                <img className='logo-footer' src={getAssetPath('images/logo-soluciones.png')} alt="Logo Soluciones Inox" />
                             </div>
                             <div className='col-sm-6 redes-footer'>
-                                <a href="mailto:info@decoinox.com.ar">
-                                    <img src="images/mail.png" alt="Mail Decoinox" />
-                                    <h3>info@decoinox.com.ar</h3>
+                                <a href="mailto:info@solucionesinox.com.ar">
+                                    <img src={getAssetPath('images/mail.png')} alt="Mail Soluciones-Inox" />
+                                    <h3>info@solucionesinox.com.ar</h3>
                                 </a>
                                 <a target='_blank' href="https://www.instagram.com/decoinox.arg/">
-                                    <img src="images/ig.png" alt="Instagram Decoinox" />
+                                    <img src={getAssetPath('images/ig.png')} alt="Instagram Decoinox" />
                                     <h3>@decoinox.arg</h3>
                                 </a>
-                                <a href="https://wa.me/+5491123645019?text=Hola,%20estoy%20en%20la%20página%20de%20Decoinox%20y%20quiero%20pedir%20más%20información">
-                                    <img src="images/whatsapp.png" alt="Whatsapp Decoinox" />
+                                <a href="https://wa.me/+5491123645019?text=Hola,%20estoy%20en%20la%20página%20de%20Soluciones-Inox%20y%20quiero%20pedir%20más%20información">
+                                    <img src={getAssetPath('images/whatsapp.png')} alt="Whatsapp Soluciones-Inox" />
                                     <h3>+54 9 11 2364-5019</h3>
                                 </a>
                             </div>

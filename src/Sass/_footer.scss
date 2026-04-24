@@ -1,13 +1,17 @@
 footer {
     background-color: black;
     padding-top: 3rem;
-    border-top: 1px solid #CBBFB1;
+    border-top: 1px solid var(--orange, #ff6500);
     overflow: hidden;
+
+    .logo-footer {
+        width: 10rem;
+    }
 
     .line {
         width: 85%;
         height: 1px;
-        background-color: white;
+        background-color: var(--orange, #ff6500);
     }
 
     .links-footer {
@@ -38,7 +42,7 @@ footer {
         a {
             font-family: roboto;
             font-size: 1.8rem;
-            color: var(--Amarillo, #CBBFB1);
+            color: var(--orange, #ff6500);
             margin: 1rem 0;
             display: flex;
 
@@ -69,9 +73,7 @@ footer {
 
 .copy{
     a{
-        color: white !important;
-        text-decoration: none !important;
-        font-size: 1.8rem;
+        color: var(--orange, #ff6500) !important;
     }
 }
 

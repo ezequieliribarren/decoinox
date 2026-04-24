@@ -8,11 +8,9 @@ const Productos = () => {
       <h2>Nuestros Productos</h2>
       <div className="gallery">
         {productos.map((producto) => {
-          const slug = producto.titulo.replace(/\s+/g, '-').toLowerCase();
-
           return (
             <div className="card" key={producto.id}>
-              <Link to={`/producto/${encodeURIComponent(slug)}`} className="card-link">
+              <Link to={`/producto/${encodeURIComponent(producto.slug)}`} className="card-link">
                 <img src={producto.imagen} alt={producto.titulo} className="card-image" />
                 <div className="card-title">
                   <h3>{producto.titulo}</h3>

@@ -1,16 +1,16 @@
 #contacto {
     background: linear-gradient(180deg, #484847 0%, #2D2D2B 100%);
-    border-top: solid 2px #CBBFB1;
+    border-top: solid 2px var(--orange, #ff6500);
     scroll-margin-top: 5em;
 
     h2 {
-        color: #CBBFB1;
+        color: var(--orange, #ff6500);
         font-family: lucida;
         font-size: 5rem;
     }
 
     .contenedor-formulario {
-        border-right: 1px solid #CBBFB1;
+        border-right: 1px solid var(--orange, #ff6500);
         margin-top: 2rem;
 
     }
@@ -83,7 +83,7 @@
             display: flex;
             align-items: center;
             border-radius: 25px 5px;
-            border: 1px #FFF solid;
+            border: 1px solid var(--orange, #ff6500);
 
 
 
