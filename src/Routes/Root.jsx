@@ -50,7 +50,7 @@ const Root = () => {
           logo: 'https://solucionesinox.com.ar/images/logo-soluciones.png',
           image: 'https://solucionesinox.com.ar/images/1.png',
           description: 'Especialistas en acero inoxidable y vidrio templado: cerramientos de piletas, barandas, pasamanos, rejillas, revestimientos y chapas decorativas.',
-          email: 'info@solucionesinox.com.ar',
+          email: 'solucionesinox.arg@gmail.com',
           telephone: '+54 9 11 2364-5019',
           areaServed: 'AR',
           sameAs: ['https://www.instagram.com/solucionesinox.arg/']

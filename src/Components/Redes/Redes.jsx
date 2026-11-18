@@ -10,7 +10,7 @@ const Redes = () => {
                 </a>
             </div>
             <div>
-                <a href="mailto:info@solucionesinox.com.ar">
+                <a href="mailto:solucionesinox.arg@gmail.com">
                     <img src={getAssetPath('images/mail.png')} alt="Email de Soluciones Inox" />
                 </a>
             </div>

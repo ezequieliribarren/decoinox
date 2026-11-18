@@ -28,7 +28,9 @@ if (!$data || !isset($data['consult_name'], $data['user_email'], $data['consult_
     exit();
 }
 
-$nombre = htmlspecialchars(trim($data['consult_name']));
+// Se eliminan saltos de línea del nombre para evitar inyección de headers en el asunto
+$nombre = htmlspecialchars(trim(preg_replace('/[
+]+/', ' ', $data['consult_name'])));
 $email = filter_var(trim($data['user_email']), FILTER_VALIDATE_EMAIL);
 $telefono = htmlspecialchars(trim($data['consult_tel']));
 $mensaje = htmlspecialchars(trim($data['consult_message']));
@@ -41,11 +43,13 @@ if (!$email) {
 }
 
 // Email destino
-$destinatario = 'info@solucionesinox.com.ar';
-$remitente = 'info@solucionesinox.com.ar';
+// Los mensajes del formulario llegan a esta casilla.
+$destinatario = 'solucionesinox.arg@gmail.com';
+// Remitente: casilla del mismo dominio del sitio (mejora la entrega en hosting compartido).
+$remitente = 'no-reply@solucionesinox.com.ar';
 
 // Asunto
-$asunto = 'Nuevo mensaje de contacto - ' . $nombre;
+$asunto = '=?UTF-8?B?' . base64_encode('Nuevo mensaje de contacto - ' . $nombre) . '?=';
 
 // Cuerpo del email
 $cuerpo = "Tienes un nuevo mensaje de contacto:\n\n";
@@ -56,13 +60,13 @@ $cuerpo .= "Mensaje:\n" . $mensaje . "\n";
 
 // Headers del email
 // En hosting compartido conviene enviar desde el mismo dominio y usar Reply-To para el cliente.
-$headers = "From: Soluciones Inox <" . $remitente . ">\r\n";
+$headers = "From: =?UTF-8?B?" . base64_encode("Soluciones Inox") . "?= <" . $remitente . ">\r\n";
 $headers .= "Reply-To: " . $email . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 // Enviar email
-$enviado = mail($destinatario, $asunto, $cuerpo, $headers);
+$enviado = mail($destinatario, $asunto, $cuerpo, $headers, '-f' . $remitente);
 
 if ($enviado) {
     http_response_code(200);

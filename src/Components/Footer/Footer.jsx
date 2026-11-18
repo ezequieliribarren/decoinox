@@ -13,9 +13,9 @@ const Footer = () => {
                                 <img className='logo-footer' src={getAssetPath('images/logo-soluciones.png')} alt="Logo Soluciones Inox" />
                             </div>
                             <div className='col-sm-6 redes-footer'>
-                                <a href="mailto:info@solucionesinox.com.ar">
+                                <a href="mailto:solucionesinox.arg@gmail.com">
                                     <img src={getAssetPath('images/mail.png')} alt="Email de Soluciones Inox" />
-                                    <h3>info@solucionesinox.com.ar</h3>
+                                    <h3>solucionesinox.arg@gmail.com</h3>
                                 </a>
                                 <a target='_blank' href="https://www.instagram.com/solucionesinox.arg/">
                                     <img src={getAssetPath('images/ig.png')} alt="Instagram de Soluciones Inox" />
