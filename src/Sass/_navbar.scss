@@ -9,20 +9,28 @@
     border-bottom: 1px solid var(--orange, #ff6500);
     padding: 0.7rem 0;
 
-    .logo-texto-up {
-        color: #fff;
-        font-family: lucida, serif; // misma tipografía que los títulos del sitio
-        font-weight: 700;
-        font-size: 3rem;
-        letter-spacing: 0.15rem;
-        text-transform: uppercase;
-        text-align: center;
-        text-decoration: none;
-        padding: 1.2rem 0;
+    background-color: #0b0b0b;
+    padding: 0;
+    overflow: hidden;
+
+    .logo-completo {
+        display: block;
+        line-height: 0;
     }
 
-    .logo-texto-up:hover {
-        color: var(--orange, #ff6500);
+    // El logo tiene fondo oscuro propio: se difuminan los bordes para que
+    // se funda con la barra y no se note el recuadro de la imagen.
+    .logo-completo img {
+        display: block;
+        height: 13rem;
+        width: auto;
+        max-width: 100%;
+        -webkit-mask-image: linear-gradient(to right, transparent 0, #000 18%, #000 82%, transparent 100%),
+                            linear-gradient(to bottom, transparent 0, #000 12%);
+        -webkit-mask-composite: source-in;
+        mask-image: linear-gradient(to right, transparent 0, #000 18%, #000 82%, transparent 100%),
+                    linear-gradient(to bottom, transparent 0, #000 12%);
+        mask-composite: intersect;
     }
 }
 
@@ -157,9 +165,8 @@
         }
     }
 
-    .logo-texto-up{
-        font-size: 2.2rem;
-        letter-spacing: 0.1rem;
+    .up-navbar .logo-completo img {
+        height: 9.5rem;
     }
 
 }

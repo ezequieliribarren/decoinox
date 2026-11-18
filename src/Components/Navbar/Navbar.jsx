@@ -24,8 +24,8 @@ const Navbar = () => {
     return (
         <>
             <div className="up-navbar">
-                <Link to="/" onClick={closeMenu} className="logo-texto-up" aria-label="Soluciones Inox - Inicio">
-                    Soluciones Inox
+                <Link to="/" onClick={closeMenu} className="logo-completo" aria-label="Soluciones Inox - Inicio">
+                    <img src={getAssetPath('images/logo-soluciones-completo.jpg')} alt="Soluciones Inox - Acero inoxidable" width="900" height="675" />
                 </Link>
             </div>
             <nav className="navbar navbar-expand-lg bg-dark">
