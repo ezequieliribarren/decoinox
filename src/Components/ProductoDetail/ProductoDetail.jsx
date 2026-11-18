@@ -62,17 +62,19 @@ const ProductoDetaill = () => {
   return (
     <>
       <Helmet>
-        <title>{producto.titulo} | Soluciones Inox</title>
+        <title>{producto.titulo} en acero inoxidable | Soluciones Inox</title>
         <meta name="description" content={descripcionLimpia || "Producto de acero inoxidable de alta calidad"} />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={`${producto.titulo} | Soluciones Inox`} />
+        <meta property="og:title" content={`${producto.titulo} en acero inoxidable | Soluciones Inox`} />
         <meta property="og:description" content={descripcionLimpia || "Producto de acero inoxidable de alta calidad"} />
         <meta property="og:image" content={producto.img1} />
         <meta property="og:type" content="product" />
-        <meta property="og:url" content={`https://www.solucionesinox.com/producto/${producto.slug}`} />
-        <link rel="canonical" href={`https://www.solucionesinox.com/producto/${producto.slug}`} />
+        <meta property="og:site_name" content="Soluciones Inox" />
+        <meta property="og:locale" content="es_AR" />
+        <meta property="og:url" content={`https://solucionesinox.com.ar/producto/${producto.slug}`} />
+        <link rel="canonical" href={`https://solucionesinox.com.ar/producto/${producto.slug}`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${producto.titulo} | Soluciones-Inox`} />
+        <meta name="twitter:title" content={`${producto.titulo} en acero inoxidable | Soluciones Inox`} />
         <meta name="twitter:description" content={descripcionLimpia || "Producto de acero inoxidable de alta calidad"} />
         <meta name="twitter:image" content={producto.img1} />
       </Helmet>
@@ -84,7 +86,7 @@ const ProductoDetaill = () => {
             <div className="row header-producto">
               {images.map((image, index) => (
                 <div className="col-2" key={index}>
-                  <img src={image} alt={`Imagen ${index + 1} de ${producto.titulo}`} className="img-fluid" />
+                  <img src={image} alt={`${producto.titulo} - Soluciones Inox (foto ${index + 1})`} className="img-fluid" />
                 </div>
               ))}
             </div>
@@ -118,7 +120,7 @@ const ProductoDetaill = () => {
                       <Slider {...settings} className='slider-model'>
                         {Object.values(modelo.imagenes).map((img, imgIndex) => (
                           <div key={imgIndex} className='item-slider'>
-                            <img src={img} alt={`Modelo ${index + 1} - Imagen ${imgIndex + 1}`} className="img-fluid" />
+                            <img src={img} alt={`${modelo.nombre} - ${producto.titulo} Soluciones Inox (foto ${imgIndex + 1})`} className="img-fluid" />
                           </div>
                         ))}
                       </Slider>

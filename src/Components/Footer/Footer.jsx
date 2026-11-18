@@ -14,15 +14,15 @@ const Footer = () => {
                             </div>
                             <div className='col-sm-6 redes-footer'>
                                 <a href="mailto:info@solucionesinox.com.ar">
-                                    <img src={getAssetPath('images/mail.png')} alt="Mail Soluciones-Inox" />
+                                    <img src={getAssetPath('images/mail.png')} alt="Email de Soluciones Inox" />
                                     <h3>info@solucionesinox.com.ar</h3>
                                 </a>
-                                <a target='_blank' href="https://www.instagram.com/decoinox.arg/">
-                                    <img src={getAssetPath('images/ig.png')} alt="Instagram Decoinox" />
-                                    <h3>@decoinox.arg</h3>
+                                <a target='_blank' href="https://www.instagram.com/solucionesinox.arg/">
+                                    <img src={getAssetPath('images/ig.png')} alt="Instagram de Soluciones Inox" />
+                                    <h3>@solucionesinox.arg</h3>
                                 </a>
                                 <a href="https://wa.me/+5491123645019?text=Hola,%20estoy%20en%20la%20página%20de%20Soluciones-Inox%20y%20quiero%20pedir%20más%20información">
-                                    <img src={getAssetPath('images/whatsapp.png')} alt="Whatsapp Soluciones-Inox" />
+                                    <img src={getAssetPath('images/whatsapp.png')} alt="WhatsApp de Soluciones Inox" />
                                     <h3>+54 9 11 2364-5019</h3>
                                 </a>
                             </div>

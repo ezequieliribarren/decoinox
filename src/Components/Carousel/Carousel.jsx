@@ -31,13 +31,13 @@ const Carousel = () => {
       <div className="desktop">
         <Slider {...settings} className='slider-desktop'>
           <div className="carousel-item">
-            <img src={getAssetPath('images/1.png')} alt="Imagen 1" />
+            <img src={getAssetPath('images/1.png')} alt="Cerramientos de piletas en acero inoxidable - Soluciones Inox" />
           </div>
           <div className="carousel-item">
-            <img src={getAssetPath('images/2.png')} alt="Imagen 2" />
+            <img src={getAssetPath('images/2.png')} alt="Barandas de acero inoxidable para escaleras - Soluciones Inox" />
           </div>
           <div className="carousel-item">
-            <img src={getAssetPath('images/3.png')} alt="Imagen 3" />
+            <img src={getAssetPath('images/3.png')} alt="Pasamanos de acero inoxidable - Soluciones Inox" />
           </div>
         </Slider>
       </div>
@@ -45,13 +45,13 @@ const Carousel = () => {
       <div className="cel">
         <Slider {...settings} className='slider-cel'>
           <div className="carousel-item">
-            <img src={getAssetPath('images/4.png')} alt="Imagen 4" />
+            <img src={getAssetPath('images/4.png')} alt="Rejillas de acero inoxidable - Soluciones Inox" />
           </div>
           <div className="carousel-item">
-            <img src={getAssetPath('images/5.png')} alt="Imagen 5" />
+            <img src={getAssetPath('images/5.png')} alt="Revestimientos de acero inoxidable - Soluciones Inox" />
           </div>
           <div className="carousel-item">
-            <img src={getAssetPath('images/6.png')} alt="Imagen 6" />
+            <img src={getAssetPath('images/6.png')} alt="Chapas decorativas de acero inoxidable - Soluciones Inox" />
           </div>
         </Slider>
       </div>

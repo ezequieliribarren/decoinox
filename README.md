@@ -1,8 +1,8 @@
-# Proyecto de Sitio Web para Decoinox - Especialistas en Acero Inoxidable
+# Proyecto de Sitio Web para Soluciones Inox - Especialistas en Acero Inoxidable
 
-![Imagen del Proyecto](https://decoinox.com.ar/images/1.png)
+![Imagen del Proyecto](https://solucionesinox.com.ar/images/1.png)
 
-Este proyecto consistió en el diseño y desarrollo completo del sitio web para **Decoinox**, una empresa especializada en productos de acero inoxidable. Utilizando **React.js** como tecnología principal, el sitio fue creado con un enfoque en la estética moderna y funcionalidad adaptada a los valores de la marca.
+Este proyecto consistió en el diseño y desarrollo completo del sitio web para **Soluciones Inox**, una empresa especializada en productos de acero inoxidable. Utilizando **React.js** como tecnología principal, el sitio fue creado con un enfoque en la estética moderna y funcionalidad adaptada a los valores de la marca.
 
 ## Tecnologías y Enfoque de Diseño
 
@@ -12,6 +12,6 @@ Este proyecto consistió en el diseño y desarrollo completo del sitio web para 
 
 ## Funcionalidades Clave
 
-- **Interfaz de Usuario Personalizada**: Diseñada para reflejar la especialización y profesionalismo de Decoinox en el mercado de acero inoxidable.
+- **Interfaz de Usuario Personalizada**: Diseñada para reflejar la especialización y profesionalismo de Soluciones Inox en el mercado de acero inoxidable.
 - **Presentación de Productos y Servicios**: Cada sección fue cuidadosamente organizada para destacar la amplia gama de productos en acero inoxidable que ofrece la empresa.
 - **Optimización y Rendimiento**: Desarrollo enfocado en un rendimiento rápido y eficaz, manteniendo una experiencia de usuario de alto nivel.

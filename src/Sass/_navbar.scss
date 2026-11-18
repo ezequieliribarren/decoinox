@@ -15,6 +15,12 @@
 
     .logo-texto-up{
         display: none;
+        color: #fff;
+        font-family: roboto;
+        font-weight: 700;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+        text-align: center;
     }
 }
 
@@ -150,8 +156,9 @@
     }
 
     .logo-texto-up{
-        display: inherit !important;
-        width: 14rem !important;
+        display: block !important;
+        font-size: 2.2rem;
+        padding: 0.5rem 0;
 
     }
 

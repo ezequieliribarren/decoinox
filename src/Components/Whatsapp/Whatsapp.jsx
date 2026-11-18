@@ -4,14 +4,6 @@ import { getAssetPath } from '../../utils/getAssetPath';
 const Whatsapp = () => {
   const [hover, setHover] = useState(false);
 
-  // Get the current hour
-  const currentHour = new Date().getHours();
-
-  // Display the component only if the current time is between 8 AM and 7 PM
-  if (currentHour < 8 || currentHour > 19) {
-    return null;
-  }
-
   return (
     <a
       className='contenedor-whatsapp'
@@ -25,9 +17,10 @@ const Whatsapp = () => {
         alignItems: 'center',
         justifyContent: 'space-between',
         cursor: 'pointer',
+        zIndex: 1111,
         textDecoration: 'none' // Para evitar subrayado en el texto
       }}
-      href='https://api.whatsapp.com/send/?phone=%2B5491123645019&text=Hola%2C+estoy+en+la+p%C3%A1gina+de+Soluciones Inox+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n&type=phone_number&app_absent=0'
+      href='https://api.whatsapp.com/send/?phone=%2B5491123645019&text=Hola%2C+estoy+en+la+p%C3%A1gina+de+Soluciones+Inox+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n&type=phone_number&app_absent=0'
       target='_blank'
       rel='noopener noreferrer'
       onMouseEnter={() => setHover(true)}
@@ -45,7 +38,7 @@ const Whatsapp = () => {
           transition: 'opacity 0.3s ease',
         }}
       >
-        <h4 className='h4-whatsapp'>Estamos en línea ¿Cómo podemos ayudarte?</h4>
+        <h4 className='h4-whatsapp'>¿Cómo podemos ayudarte? Escribinos por WhatsApp</h4>
       </div>
       <div className='img-whatsapp'
         style={{
@@ -54,12 +47,16 @@ const Whatsapp = () => {
         }}
       >
         <img
-          src={hover ? getAssetPath('images/wp2.png') : getAssetPath('images/wp.png')}
-          alt="WhatsApp"
+          src={getAssetPath('images/wp2.png')}
+          alt="Contactar a Soluciones Inox por WhatsApp"
           style={{
             width: '60px',
             height: '60px',
-            transition: '0.3s',
+            borderRadius: '50%',
+            transition: 'filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease',
+            filter: hover ? 'brightness(1.35) saturate(1.2)' : 'brightness(1)',
+            transform: hover ? 'scale(1.08)' : 'scale(1)',
+            boxShadow: hover ? '0 0 18px rgba(37, 211, 102, 0.8)' : '0 0 8px rgba(37, 211, 102, 0.35)',
           }}
         />
       </div>

@@ -28,7 +28,7 @@ const Navbar = () => {
                     <img src={getAssetPath('images/logo-soluciones.png')} alt="Logo Soluciones Inox" />
                 </Link>
                 <div>
-                    <img className='logo-texto-up' src={getAssetPath('images/logo-soluciones.png')} alt="Logo Soluciones Inox" />
+                    <span className='logo-texto-up'>Soluciones Inox</span>
                 </div>
 
             </div>

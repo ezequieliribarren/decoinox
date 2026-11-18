@@ -19,26 +19,42 @@ const Root = () => {
   return (
     <>
       <Helmet>
-        <title>Especialistas en acero inoxidable | Decoinox</title>
-        <meta name="description" content="En Decoinox somos especialistas en acero inoxidable. Ofrecemos productos de alta calidad con rápida instalación y atención personalizada." />
-        <meta name="keywords" content="acero inoxidable, especialistas, productos de acero, instalaciones, Decoinox" />
+        <title>Soluciones Inox | Cerramientos, barandas y pasamanos de acero inoxidable</title>
+        <meta name="description" content="Soluciones Inox: especialistas en acero inoxidable y vidrio templado. Cerramientos de piletas, barandas, pasamanos, rejillas, revestimientos y chapas decorativas con rápida instalación. Pedí tu presupuesto." />
+        <meta name="keywords" content="Soluciones Inox, acero inoxidable, cerramientos de piletas, barandas de acero inoxidable, pasamanos, rejillas de desagüe, revestimientos de acero inoxidable, chapas decorativas, vidrio templado, Argentina" />
+        <meta name="robots" content="index, follow" />
 
         {/* Open Graph (Facebook) */}
-        <meta property="og:title" content="Especialistas en acero inoxidable | Decoinox" />
-        <meta property="og:description" content="Conocé nuestros productos de acero inoxidable. Calidad garantizada y rápida instalación." />
-        <meta property="og:image" content="https://decoinox.com/images/home-og.jpg" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:url" content="https://decoinox.com/" />
+        <meta property="og:site_name" content="Soluciones Inox" />
+        <meta property="og:locale" content="es_AR" />
         <meta property="og:type" content="website" />
+        <meta property="og:title" content="Soluciones Inox | Especialistas en acero inoxidable" />
+        <meta property="og:description" content="Cerramientos de piletas, barandas, pasamanos, rejillas y revestimientos en acero inoxidable. Calidad garantizada y rápida instalación." />
+        <meta property="og:image" content="https://solucionesinox.com.ar/images/1.png" />
+        <meta property="og:url" content="https://solucionesinox.com.ar/" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Especialistas en acero inoxidable | Decoinox" />
-        <meta name="twitter:description" content="En Decoinox vas a encontrar la más alta calidad en productos de acero inoxidable." />
-        <meta name="twitter:image" content="https://decoinox.com/images/home-og.jpg" />
+        <meta name="twitter:title" content="Soluciones Inox | Especialistas en acero inoxidable" />
+        <meta name="twitter:description" content="En Soluciones Inox vas a encontrar la más alta calidad en productos de acero inoxidable y vidrio templado." />
+        <meta name="twitter:image" content="https://solucionesinox.com.ar/images/1.png" />
 
-        {/* Canonical URL (opcional pero recomendado) */}
-        <link rel="canonical" href="https://decoinox.com/" />
+        <link rel="canonical" href="https://solucionesinox.com.ar/" />
+
+        {/* Datos estructurados */}
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'LocalBusiness',
+          name: 'Soluciones Inox',
+          url: 'https://solucionesinox.com.ar/',
+          logo: 'https://solucionesinox.com.ar/images/logo-soluciones.png',
+          image: 'https://solucionesinox.com.ar/images/1.png',
+          description: 'Especialistas en acero inoxidable y vidrio templado: cerramientos de piletas, barandas, pasamanos, rejillas, revestimientos y chapas decorativas.',
+          email: 'info@solucionesinox.com.ar',
+          telephone: '+54 9 11 2364-5019',
+          areaServed: 'AR',
+          sameAs: ['https://www.instagram.com/solucionesinox.arg/']
+        })}</script>
       </Helmet>
 
       <Layout>

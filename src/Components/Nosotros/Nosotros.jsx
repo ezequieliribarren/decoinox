@@ -55,7 +55,7 @@ const Nosotros = () => {
             <div className="container contenedor-nosotros">
                 <div className="row description nosotros">
                     <div className="col-md-4 img-nosotros">
-                        <img className='img-nosotros-img' src={getAssetPath('images/nosotros/logo-nosotros.png')} alt="Soluciones - Inox" />
+                        <img className='img-nosotros-img' src={getAssetPath('images/nosotros/logo-nosotros.png')} alt="Logo Soluciones Inox" />
                     </div>
                     <div className="col-md-8">
                         <h2>Conocenos</h2>
@@ -76,7 +76,7 @@ const Nosotros = () => {
                     <Slider className='slider-nosotros' {...settings}>
                         {imagenesData.imagenes.map((imagen, index) => (
                             <div className='item-slider-nosotros' key={index}>
-                                <img src={getAssetPath(imagen.url)} alt={`Imagen ${index + 1}`} />
+                                <img src={getAssetPath(imagen.url)} alt={`Trabajo realizado por Soluciones Inox ${index + 1}`} />
                             </div>
                         ))}
                     </Slider>
