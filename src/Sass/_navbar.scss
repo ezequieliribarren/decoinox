@@ -9,18 +9,20 @@
     border-bottom: 1px solid var(--orange, #ff6500);
     padding: 0.7rem 0;
 
-    img {
-        width: 6.5rem;
-    }
-
-    .logo-texto-up{
-        display: none;
+    .logo-texto-up {
         color: #fff;
         font-family: roboto;
         font-weight: 700;
-        letter-spacing: 0.15rem;
+        font-size: 2.6rem;
+        letter-spacing: 0.3rem;
         text-transform: uppercase;
         text-align: center;
+        text-decoration: none;
+        padding: 1.2rem 0;
+    }
+
+    .logo-texto-up:hover {
+        color: var(--orange, #ff6500);
     }
 }
 
@@ -156,10 +158,8 @@
     }
 
     .logo-texto-up{
-        display: block !important;
-        font-size: 2.2rem;
-        padding: 0.5rem 0;
-
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
     }
 
 }

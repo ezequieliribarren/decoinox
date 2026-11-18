@@ -24,13 +24,9 @@ const Navbar = () => {
     return (
         <>
             <div className="up-navbar">
-                <Link to="/" onClick={closeMenu}>
-                    <img src={getAssetPath('images/logo-soluciones.png')} alt="Logo Soluciones Inox" />
+                <Link to="/" onClick={closeMenu} className="logo-texto-up" aria-label="Soluciones Inox - Inicio">
+                    Soluciones Inox
                 </Link>
-                <div>
-                    <span className='logo-texto-up'>Soluciones Inox</span>
-                </div>
-
             </div>
             <nav className="navbar navbar-expand-lg bg-dark">
                 <div className="container-fluid">
